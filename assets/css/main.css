@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -28,6 +22,15 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+	.row {
+		display: flex;
+		justify-content: center;
+	}
+	
+	li {
+		list-style: none;
+	}
 
 body {
 	line-height: 1;
@@ -71,8 +74,6 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
-/* Basic */
 
 	@-ms-viewport {
 		width: device-width;
@@ -2121,13 +2122,12 @@ input, select, textarea {
 	}
 
 		ol li {
-			padding-left: 0.25em;
+			padding-left: 0;
 		}
 
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
@@ -2767,7 +2767,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 3em 0 2em 0 ;
 	}
 
 		.wrapper > .inner {
@@ -2959,7 +2959,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #523C6A;
 			color: #d3d4e4;
 		}
 
@@ -3013,7 +3013,7 @@ input, select, textarea {
 
 				.wrapper.style3 select option {
 					color: #ffffff;
-					background: #505393;
+					background: #523C6A;
 				}
 
 			.wrapper.style3 input[type="checkbox"] + label,
@@ -3029,7 +3029,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #505393;
+				color: #523C6A;
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
@@ -3330,7 +3330,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #523C6A;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3861,23 +3861,19 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
-/* Footer */
+/* Icons */
 
-	#footer {
-		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
-		text-align: center;
-	}
 
-		#footer .icons {
-			font-size: 1.25em;
+
+		.icons {
+			font-size: 2.25em;
 		}
 
-			#footer .icons a {
+			.icons a {
 				color: rgba(255, 255, 255, 0.5);
 			}
 
-				#footer .icons a:hover {
+				.icons a:hover {
 					color: #fff;
 				}
 
